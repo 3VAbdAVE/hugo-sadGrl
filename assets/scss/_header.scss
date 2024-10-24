@@ -37,28 +37,25 @@ $navbar-link-color: h.$navbar_link_color;
     // top: 50%;
     // transform: translate(0, -50%);
     color: $title-color;
-    h1,h2 {
-    font-size: 1em;
-    }
+    font-size: 1.5em;
     .title {
         font-family: $title-font, "sans-serif";
     }
     .subtitle {
         font-family: $subtitle-font, sans-serif;
+        font-style: italic;
     }
 }
 
-@container (min-width: 700px) {
-    .titles {
+@container header-container (min-width: 700px) {
         .title {
             text-shadow: -3px 3px 1px #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            font-size: 3em;
+            font-size: 2.2em;
         }
         .subtitle {
             text-shadow: -2px 2px 1px #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            font-size: 2em;
+            font-size: 1.5em;
         }
-    }
 }
 
 #navbar {
