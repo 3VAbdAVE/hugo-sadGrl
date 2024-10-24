@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div id="flex">  
+        <main aria-role="main" class="page-title">
+          {{ partial "page_header.html" . }}
+          
+          {{ .Content }}
+
+        </main>
+        
+    </div>
+  
+
+    {{/*  {{ range site.RegularPages }}  
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }}  */}}
+{{ end }}
+
+

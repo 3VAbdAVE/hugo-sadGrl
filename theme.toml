@@ -1,0 +1,87 @@
+# General site config
+version = "0.1"
+languageCode = "en-us"
+name = "Site Name"
+title = "Site Title"
+copyright       = "Copyright String"
+theme = "sadGrl"
+
+# Prefix all links with this
+baseURL = "https://example.com"
+
+[params]
+# this is the description for the meta and head info.
+# This will display on the front-page unless you override it in 
+# the _index.md content front-matter.
+# keywords end up in the meta as well as other content
+  description = "Hugo port of sadGrl's Neocities layout builder."
+  keywords = ["seo", "keywords"]
+  features = ["site", "features"]
+  custom_css = [ "css/custom.css"]
+  sitelogo = "https://upload.wikimedia.org/wikipedia/commons/1/13/Public_Domain_Symbol.png"
+
+[params.author]
+  # Site author metadata
+  name = "Name"
+  homepage = "https://example.com"
+
+[params.footer]
+  trademark = true
+  # Add a copyright + year
+  copyright = true
+  author = true
+  topText = ["Top Footer Text"]
+  bottomText = ["Bottom Footer Text"]
+
+[params.style]
+  # Global site styles
+  body_bg_image = "https://sadhost.neocities.org/images/tiles/purplesky.gif"
+  body_bg_color = "#08031A"
+
+  # Font selections
+  title_font = "Nunito"
+  subtitle_font = "Nunito"
+  content_font = "Nunito"
+
+  # Content Box Styles
+  content_color = "#fceaff"
+  content_bg_color = "#43256E"
+  link_color = "#ED64F5"
+
+  # Header & Navbar styles
+  heading_color = "#ED64F5"
+  header_image = "https://sadhost.neocities.org/images/layouts/wp.jpeg"
+  header_image_height = "284px"
+  header_bg_color = "#232425"
+  navbar_bg_color = "#13092D"
+  navbar_link_color = "#ED64F5"
+
+  # Footer styles
+  footer_bg_color = "#13092D"
+
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'link'
+pageRef = '/link'
+weight = 30
+
+[[menus.main]]
+name = 'link'
+pageRef = '/link'
+weight = 40
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+

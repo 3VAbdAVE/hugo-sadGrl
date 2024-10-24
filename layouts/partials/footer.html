@@ -1,0 +1,23 @@
+{{ if or (.Site.Params.footer.trademark) (.Site.Params.footer.author) (.Site.Params.footer.copyright) (.Site.Params.footer.topText) }}
+    <div>
+        {{ if .Site.Params.footer.trademark }}
+            <span>&copy; {{ now.Format "2006" }}</span>
+        {{ end }}
+        {{ if .Site.Params.footer.author }}
+            <span>
+            {{ if $.Site.Params.Author.homepage }}
+                <a href="{{ .Site.Author.homepage }}">{{ $.Site.Author.name }}</a>
+            {{ else }}
+                {{ $.Site.Params.Author.name }}
+            {{ end }}
+            </span>
+        {{ end }}
+        {{ if .Site.Params.footer.copyright }}<span>{{ .Site.Copyright| safeHTML }}</span>{{ end }}
+        {{ range .Site.Params.footer.topText }}<span>{{ . | safeHTML}}</span>{{ end }}
+    </div>
+{{ end }}
+{{with .Site.Params.footer.bottomText}}
+    <div>
+        {{ range . }}<span>{{ . | safeHTML}}</span>{{ end }}
+    </div>
+{{ end }}

@@ -1,0 +1,16 @@
+@use "hugo:vars" as h;
+
+@font-face {
+	font-family: Nunito;
+	src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+	font-family: Nunito;
+	src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+	font-weight: bold;
+	font-family: Nunito;
+	src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+	font-style: italic;
+	font-family: Nunito;
+	src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+	font-style: italic;
+	font-weight: bold;
+}

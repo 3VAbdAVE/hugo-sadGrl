@@ -1,0 +1,10 @@
+@use "hugo:vars" as h;
+
+$footer-bg-color: h.$footer_bg_color;
+
+footer {
+	background-color: $footer-bg-color;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}

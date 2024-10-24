@@ -1,0 +1,88 @@
+@use "hugo:vars" as h;
+
+$header-image: h.$header_image;
+$header-image-height: h.$header_image_height;
+$title-font: h.$title_font;
+$title-color: h.$heading_color;
+$subtitle-font: h.$subtitle_font;
+$header-bg-color: h.$header_bg_color;
+$navbar-bg-color: h.$navbar_bg_color;
+$navbar-link-color: h.$navbar_link_color;
+
+.header-image {
+	width: 100%;
+	background-color: $header-bg-color;
+	height: $header-image-height;
+	background-image: url($header-image);
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //text-align: center;
+    //vertical-align: middle;
+    // line-height: $header-image-height;
+    container-type: inline-size;
+    container-name: header-container;
+    display: flex;
+    // justify-content: center;
+    // position: relative;
+    align-items: center;
+    
+}
+
+.titles {
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    // position:absolute;
+    // top: 50%;
+    // transform: translate(0, -50%);
+    color: $title-color;
+    h1,h2 {
+    font-size: 1em;
+    }
+    .title {
+        font-family: $title-font, "sans-serif";
+    }
+    .subtitle {
+        font-family: $subtitle-font, sans-serif;
+    }
+}
+
+@container (min-width: 700px) {
+    .titles {
+        .title {
+            text-shadow: -3px 3px 1px #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 3em;
+        }
+        .subtitle {
+            text-shadow: -2px 2px 1px #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 2em;
+        }
+    }
+}
+
+#navbar {
+	height: 40px;
+	background-color: $navbar-bg-color;
+	width: 100%;
+	ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+	li {
+		padding-top: 10px;
+		a {
+			color: $navbar-link-color;
+			font-weight: 800;
+			text-decoration: none;
+			&:hover {
+				color: #a49cba;
+				text-decoration: underline;
+			}
+		}
+	}
+}
