@@ -19,6 +19,7 @@ baseURL = "https://example.com"
   features = ["site", "features"]
   custom_css = [ "css/custom.css"]
   sitelogo = "https://upload.wikimedia.org/wikipedia/commons/1/13/Public_Domain_Symbol.png"
+  align_home_text = "center"
 
 [params.author]
   # Site author metadata
@@ -26,6 +27,7 @@ baseURL = "https://example.com"
   homepage = "https://example.com"
 
 [params.footer]
+  # Footer customization
   trademark = true
   # Add a copyright + year
   copyright = true
@@ -35,6 +37,7 @@ baseURL = "https://example.com"
 
 [params.style]
   # Global site styles
+  # Global backgroudn image. This will tile.
   body_bg_image = "https://sadhost.neocities.org/images/tiles/purplesky.gif"
   body_bg_color = "#08031A"
 
@@ -48,7 +51,7 @@ baseURL = "https://example.com"
   content_bg_color = "#43256E"
   link_color = "#ED64F5"
 
-  # Header & Navbar styles
+  # Header & Navbar/menu styles
   heading_color = "#ED64F5"
   header_image = "https://sadhost.neocities.org/images/layouts/wp.jpeg"
   header_image_height = "284px"
@@ -66,8 +69,8 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
+name = 'Updates'
+pageRef = '/updates'
 weight = 20
 
 [[menus.main]]

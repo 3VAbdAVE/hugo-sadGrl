@@ -1,19 +1,26 @@
 {{ define "main" }}
 <div id="flex">  
-        <main aria-role="main" class="page-title">
-          {{ partial "page_header.html" . }}
-          
-          {{ .Content }}
-
-        </main>
-        
+  <div id="home-content">
+      {{ partial "home_header.html" . }}
+    <div id="home-text">
+      {{ .Content }}
     </div>
-  
+  </div>  
+</div>
 
-    {{/*  {{ range site.RegularPages }}  
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}  */}}
+{{ if .Site.Params.Style.latest_update }}
+<div id="home-update">
+  <hr>
+    <h2>Latest update</h2>
+    {{ range first 1 (site.GetPage "updates").Pages }}  
+      <h3>{{.Date.Format "01-02-2006"}}: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+      {{ .Summary }}
+    {{ end }}
+  <hr>
+  <a href="/updates">All Updates</a>
+</div>
+{{end}}
+ 
 {{ end }}
 
 
