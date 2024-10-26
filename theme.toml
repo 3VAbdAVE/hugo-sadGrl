@@ -3,8 +3,8 @@ version = "0.1"
 languageCode = "en-us"
 name = "Site Name"
 title = "Site Title"
-copyright       = "Copyright String"
-theme = "sadGrl"
+copyright = "Copyright String"
+theme = "hugo-sadGrl"
 
 # Prefix all links with this
 baseURL = "https://example.com"
@@ -13,13 +13,12 @@ baseURL = "https://example.com"
 # this is the description for the meta and head info.
 # This will display on the front-page unless you override it in 
 # the _index.md content front-matter.
-# keywords end up in the meta as well as other content
   description = "Hugo port of sadGrl's Neocities layout builder."
+  # keywords end up in the meta as well as other content
   keywords = ["seo", "keywords"]
   features = ["site", "features"]
   custom_css = [ "css/custom.css"]
   sitelogo = "https://upload.wikimedia.org/wikipedia/commons/1/13/Public_Domain_Symbol.png"
-  align_home_text = "center"
 
 [params.author]
   # Site author metadata
@@ -28,6 +27,7 @@ baseURL = "https://example.com"
 
 [params.footer]
   # Footer customization
+  show_footer = true
   trademark = true
   # Add a copyright + year
   copyright = true
@@ -35,18 +35,43 @@ baseURL = "https://example.com"
   topText = ["Top Footer Text"]
   bottomText = ["Bottom Footer Text"]
 
+# These emulate sadGrl's layout maker. If you want to turn on/off sections
+# of the page layouts.
+[params.topbar]
+  show_topbar = true
+
+[params.navbar]
+  show_navbar = true
+
+[params.sidebar]
+  show_left_sidebar = true
+  show_right_sidebar = true
+
+[params.homepage]
+  # This will add the latest update to the home page in the center.
+  show_latest_update = true
+
+# Change these for the various site colors and other stuff.
 [params.style]
   # Global site styles
-  # Global backgroudn image. This will tile.
+  # Global background image. This will tile.
   body_bg_image = "https://sadhost.neocities.org/images/tiles/purplesky.gif"
   body_bg_color = "#08031A"
+
+  # To separate sections (content/footer/header/sidebars) with a space.
+  # 0 to disable, 10px is sadGrl's default enabled.
+  section_margin = "10px"
 
   # Font selections
   title_font = "Nunito"
   subtitle_font = "Nunito"
   content_font = "Nunito"
+  
+  # Homepage styles
+  align_home_text = "center"
+  latest_update = 1 #I don't know why this errors with true/false vs. 1/0.
 
-  # Content Box Styles
+  # Content Styles
   content_color = "#fceaff"
   content_bg_color = "#43256E"
   link_color = "#ED64F5"
@@ -58,6 +83,12 @@ baseURL = "https://example.com"
   header_bg_color = "#232425"
   navbar_bg_color = "#13092D"
   navbar_link_color = "#ED64F5"
+
+  # sidebar styles
+  sidebar_bg_color = "#08031A"
+  # Sidebar content renders in a box. These are the box settings.
+  sidebar_box_bg_color = "#13092D"
+  sidebar_box_border_color = "#ED64F5"
 
   # Footer styles
   footer_bg_color = "#13092D"
@@ -88,3 +119,5 @@ weight = 40
     extended = false
     min = "0.116.0"
 
+[markup.goldmark.renderer]
+unsafe= true

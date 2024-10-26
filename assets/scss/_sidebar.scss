@@ -1,0 +1,43 @@
+@use "hugo:vars" as h;
+
+$sidebar-bg-color: h.$content_bg_color;
+$sidebar-box-bg-color: h.$sidebar_box_bg_color;
+$sidebar-box-border-color: h.$sidebar_box_border_color;
+$section-margin: h.$section_margin;
+
+aside {
+    background-color: #241445;
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    margin-bottom: $section-margin;
+    margin-top: $section-margin;
+    
+    /* this makes the sidebar text slightly smaller */
+}
+
+* {
+	#leftSidebar {
+		order: 1;
+		margin-right: $section-margin;
+        background-color: $sidebar-bg-color;
+        ul {
+            padding-left:10px;
+        }
+	}
+}
+
+#rightSidebar {
+	order: 3;
+    margin-left: $section-margin;
+    background-color: $sidebar-bg-color;
+    ul {
+        padding-left:10px;
+    }
+}
+
+.box {
+	background-color: $sidebar-box-bg-color;
+	border: 1px solid $sidebar-box-border-color;
+	padding: 10px;
+}

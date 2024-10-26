@@ -1,12 +1,8 @@
-<div class="header-image">
-    <div class="titles">
-        <span class="title">{{ .Title }}</span>
-        {{ with .Params.subtitle }}
-            <p><span class="subtitle">{{ . }}</span></p>
-        {{ end }}
+<header>
+    <div id="headerArea">
+        {{ partial "header_image.html" . }}
+        {{ if .Site.Params.navbar.show_navbar }}
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
-</div>
-
-<div id="headerArea">
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-</div>
+        {{ end }}
+</header>

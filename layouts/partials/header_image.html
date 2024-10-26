@@ -1,0 +1,10 @@
+<div class="header-image">
+    {{ with .Params.title }}
+        <div class="titles">
+            <span class="title">{{ . }}</span>
+            {{ with $.Params.subtitle }}
+                <p><span class="subtitle">{{ . }}</span></p>
+            {{ end }}
+        </div>
+    {{ end }}
+</div>

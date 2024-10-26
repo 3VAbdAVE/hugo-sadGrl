@@ -1,14 +1,12 @@
 {{ define "main" }}
-<div id="flex">  
   <div id="home-content">
       {{ partial "home_header.html" . }}
     <div id="home-text">
       {{ .Content }}
     </div>
   </div>  
-</div>
 
-{{ if .Site.Params.Style.latest_update }}
+{{ if .Site.Params.homepage.show_latest_update }}
 <div id="home-update">
   <hr>
     <h2>Latest update</h2>

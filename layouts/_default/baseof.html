@@ -2,19 +2,29 @@
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "head.html" . }}
- 
 </head>
 <body>
   <div id="container">
-    <header>
+    {{ if .Site.Params.topbar.show_topbar }}
+      {{ partial "topbar.html" . }}
+    {{ end }}
       {{ partial "header.html" . }}
-    </header>
-    <main id="contentbox">
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>
+    <div id="flex">
+      {{ if .Site.Params.sidebar.show_left_sidebar }}
+        {{ partial "left_sidebar.html" . }}
+      {{ end }}
+      <main id="contentbox">
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ if .Site.Params.sidebar.show_right_sidebar }}
+        {{ partial "right_sidebar.html" . }}
+      {{ end }}
+    </div>
+    {{ if .Site.Params.footer.show_footer }}
+      <footer>
+        {{ partial "footer.html" . }}
+      </footer>
+    {{ end }}
   </div>
 </body>
 </html>

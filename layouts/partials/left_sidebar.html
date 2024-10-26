@@ -1,0 +1,8 @@
+<aside id="leftSidebar">
+    {{ with .Site.GetPage "/sidebar/left_sidebar" }}
+        <h2>{{ .Title }}</h2>
+        <div class="box">
+            {{ .Content }}
+        </div>
+    {{ end }}
+</aside>

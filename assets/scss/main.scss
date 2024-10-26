@@ -1,57 +1,29 @@
+@use "hugo:vars" as h;
+$section-margin: h.$section_margin;
+
 @use "body";
 @use "font";
 @use "header";
 @use "footer";
+@use "sidebar";
 
 * {
 	box-sizing: border-box;
 }
 
 #contentbox {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: $section-margin;
+	margin-bottom: $section-margin;
 }
 
 #flex {
 	display: flex;
 }
 
-aside {
-	background-color: #241445;
-	width: 200px;
-	padding: 20px;
-	font-size: smaller;
-	width: 100%;
-}
 
-* {
-	#leftSidebar {
-		order: 1;
-	}
-}
-#rightSidebar {
-	order: 3;
-	order: 3;
-}
-
-.box {
-	background-color: #13092D;
-	border: 1px solid #ED64F5;
-	padding: 10px;
-}
-#topBar {
-	width: 100%;
-	height: 30px;
-	padding: 10px;
-	font-size: smaller;
-	background-color: #13092D;
-}
 @media only screen and (max-width: 800px) {
 	#flex {
     	flex-wrap: wrap;
 	}
 }
 
-#leftSidebar {
-	order: 2;
-}

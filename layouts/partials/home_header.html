@@ -1,10 +1,10 @@
-<div id="home-header">
+<div id="header">
     {{ with .Site.Params.sitelogo }}
-      <div id="home-image">
+      <div id="header-image">
         <img src={{ . }} alt="site logo" />
       </div>
     {{ end }}
-    <div id="home-heading">  
+    <div id="page-heading">  
       <h1>{{ .Params.heading }}</h1>
       {{ with .Params.subheading }}
         <span class="subtitle">{{ . }}</span>
