@@ -10,7 +10,7 @@ This does what a default Hugo template does. Styling is based on the sadGrl layo
 
 ## Installation
 
-Copy/Paste it into your themes folder, or else do the fancy githum module tricks.
+Copy/Paste it into your themes folder, or else do the fancy github module trick.
 
 ## Configuration
 
