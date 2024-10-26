@@ -8,6 +8,7 @@ $heading-color: h.$heading_color;
 $content-bg-color: h.$content_bg_color;
 $content-font: h.$content_font;
 $align-home-text: h.$align_home_text;
+$content-width: h.$content_width;
 
 body {
 	font-family: $content-font, sans-serif;
@@ -18,7 +19,7 @@ body {
 }
 
 #container {
-	max-width: 900px;
+	max-width: $content-width;
 	margin: 0 auto;
 	a {
 		color: $link-color;

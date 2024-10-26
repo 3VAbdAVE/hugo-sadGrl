@@ -1,4 +1,7 @@
-<div class="header-image">
+<div class="header-image"
+    {{ if isset $.Params "banner_image" }}
+         style="background-image: url({{ $.Params.banner_image | safeCSS }} )"
+    {{ end }} >
     {{ with .Params.title }}
         <div class="titles">
             <span class="title">{{ . }}</span>

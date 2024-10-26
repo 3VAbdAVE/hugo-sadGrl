@@ -1,9 +1,11 @@
 <div id="header">
+  {{ if .IsHome }}
     {{ with .Site.Params.sitelogo }}
       <div id="header-image">
         <img src={{ . }} alt="site logo" />
       </div>
     {{ end }}
+  {{ end }}
     <div id="page-heading">  
       <h1>{{ .Params.heading }}</h1>
       {{ with .Params.subheading }}

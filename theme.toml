@@ -19,7 +19,9 @@ baseURL = "https://example.com"
   features = ["site", "features"]
   custom_css = [ "css/custom.css"]
 
-  # Add a logo on the home page next to the heading.
+  # this will display an image next to the header/subheader section of the content
+  # on the home page.
+  # It currently doesn't work great. Comment/delete to disable.
   sitelogo = "https://upload.wikimedia.org/wikipedia/commons/1/13/Public_Domain_Symbol.png"
 
 [params.author]
@@ -56,7 +58,7 @@ baseURL = "https://example.com"
 
 [params.style]
   # Global site styles
-  # Global backgroudn image. This will tile.
+  # Global backgroudn image. This will tile. URL or local path (/img/...)
   body_bg_image = "https://sadhost.neocities.org/images/tiles/purplesky.gif"
   body_bg_color = "#08031A"
 
@@ -79,6 +81,9 @@ baseURL = "https://example.com"
   content_bg_color = "#43256E"
   link_color = "#ED64F5"
 
+  # sadGrl's layout maker sets this to 900px, so that's default here. 
+  content_width = "900px"
+
   # Header & Navbar/menu styles
   heading_color = "#ED64F5"
   header_image = "https://sadhost.neocities.org/images/layouts/wp.jpeg"
@@ -90,6 +95,9 @@ baseURL = "https://example.com"
     # Sidebar content renders in a box. These are the box settings.
   sidebar_box_bg_color = "#08031A"
   sidebar_box_border_color = "#ED64F5"
+
+  # sadGrl's layout maker sets this to 200px, so that's default here.
+  sidebar_width = "200px"
 
   # Footer styles
   footer_bg_color = "#13092D"

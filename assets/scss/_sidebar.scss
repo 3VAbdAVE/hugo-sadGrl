@@ -4,10 +4,11 @@ $sidebar-bg-color: h.$content_bg_color;
 $sidebar-box-bg-color: h.$sidebar_box_bg_color;
 $sidebar-box-border-color: h.$sidebar_box_border_color;
 $section-margin: h.$section_margin;
+$sidebar_width: h.$sidebar_width;
 
 aside {
     background-color: #241445;
-    width: 200px;
+    width: $sidebar_width;
     padding: 20px;
     font-size: smaller;
     margin-bottom: $section-margin;
