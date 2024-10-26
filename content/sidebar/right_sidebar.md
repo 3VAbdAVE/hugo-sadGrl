@@ -1,13 +1,21 @@
 +++
-title = "Right Updates"
+title = "Default Right"
 draft = false
 +++  
   
-## Updates
+Default right Sidebar
 
-I have recently updated this tool as of August 2022!<
+To create your own sidebar:
 
-- Rewrote the JS to generate cleaner code
-- Rewrote the CSS in a way that hopefully makes much more sense to edit
-- Added a couple of new features!
-- Old version is still available [here](/old.html)
+- Create a new **right_sidebar.md" file in /content/sidebar/.
+- Add frontmatter if desired:
+
+```text
++++
+title = "Default Right"
++++  
+```
+
+- Add any content below that using markdown.
+
+This is more advanced, but the sidebars are generated as a standard Hugo page, so you can replace the .md with .html and be fancy with [Hugo templating](https://gohugo.io/templates/) as well.

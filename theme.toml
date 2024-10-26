@@ -13,11 +13,13 @@ baseURL = "https://example.com"
 # this is the description for the meta and head info.
 # This will display on the front-page unless you override it in 
 # the _index.md content front-matter.
+# keywords end up in the meta as well as other content
   description = "Hugo port of sadGrl's Neocities layout builder."
-  # keywords end up in the meta as well as other content
   keywords = ["seo", "keywords"]
   features = ["site", "features"]
   custom_css = [ "css/custom.css"]
+
+  # Add a logo on the home page next to the heading.
   sitelogo = "https://upload.wikimedia.org/wikipedia/commons/1/13/Public_Domain_Symbol.png"
 
 [params.author]
@@ -48,17 +50,17 @@ baseURL = "https://example.com"
   show_right_sidebar = true
 
 [params.homepage]
-  # This will add the latest update to the home page in the center.
-  show_latest_update = true
+  # This will add the latest update to the home page section in the center
+  # below the main home page content.
+  show_latest_update = false
 
-# Change these for the various site colors and other stuff.
 [params.style]
   # Global site styles
-  # Global background image. This will tile.
+  # Global backgroudn image. This will tile.
   body_bg_image = "https://sadhost.neocities.org/images/tiles/purplesky.gif"
   body_bg_color = "#08031A"
 
-  # To separate sections (content/footer/header/sidebars) with a space.
+# To separate sections (content/footer/header/sidebars) with a space.
   # 0 to disable, 10px is sadGrl's default enabled.
   section_margin = "10px"
 
@@ -66,10 +68,11 @@ baseURL = "https://example.com"
   title_font = "Nunito"
   subtitle_font = "Nunito"
   content_font = "Nunito"
-  
+
   # Homepage styles
-  align_home_text = "center"
-  latest_update = 1 #I don't know why this errors with true/false vs. 1/0.
+
+  # This will align the content section of the home page.
+  align_home_text = "left"
 
   # Content Styles
   content_color = "#fceaff"
@@ -84,10 +87,8 @@ baseURL = "https://example.com"
   navbar_bg_color = "#13092D"
   navbar_link_color = "#ED64F5"
 
-  # sidebar styles
-  sidebar_bg_color = "#08031A"
-  # Sidebar content renders in a box. These are the box settings.
-  sidebar_box_bg_color = "#13092D"
+    # Sidebar content renders in a box. These are the box settings.
+  sidebar_box_bg_color = "#08031A"
   sidebar_box_border_color = "#ED64F5"
 
   # Footer styles
@@ -119,5 +120,3 @@ weight = 40
     extended = false
     min = "0.116.0"
 
-[markup.goldmark.renderer]
-unsafe= true
