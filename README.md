@@ -6,7 +6,7 @@ I just wanted a theme that I could use to create a static, old-timey website. I 
 
 ## Features
 
-This does what a default Hugo template does, and is almost entirely just styling changes based on the sadGrl source.
+This does what a default Hugo template does. Styling is based on the sadGrl layout source. The options in the layout builder are available through the configuration.
 
 ## Installation
 
