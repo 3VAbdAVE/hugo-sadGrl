@@ -17,6 +17,8 @@ baseURL = "https://example.com"
   description = "Hugo port of sadGrl's Neocities layout builder."
   keywords = ["seo", "keywords"]
   features = ["site", "features"]
+  
+  # You can write your own CSS that can override or supplement the defaults.
   custom_css = [ "css/custom.css"]
 
   # this will display an image next to the header/subheader section of the content
