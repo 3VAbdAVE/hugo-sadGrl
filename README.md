@@ -25,6 +25,7 @@ This recreates the functionaliy of the sadGrl layout builder via hugo.toml setti
 - Left and right sidebars separately on/off
 - Footer on/off
 - Spacing between elements is configurable vs. on/off.
+- Banner image height configurable
 
 This theme offers additional optional functionality unavailable in the layout builder, which hard-codes a lot of this in the output. No need to change CSS or HTML directly.
 - Background image and/or color
