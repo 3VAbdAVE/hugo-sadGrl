@@ -51,8 +51,10 @@ At this point, you can cd into **/your_website_folder** and run **hugo server**.
 
 If that starts without errors, open a browser to localhost:1313, and you should see the site.
 
-All features are enabled by default. The layout is easily customized.
 ![Default Site](screenshots/theme-default-config.png)
+
+All features are enabled by default. The layout is easily customized.
+The default templates also include some instruction text to help get accustomed to Hugo and how this theme works.
 
 ## Configuration
 
