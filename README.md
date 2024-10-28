@@ -67,3 +67,22 @@ Small tip for keeping your site clean:
 ## Configuration
 
 See theme.toml. Most of the general styles can be changed. If you want custom fonts, pop them into your site's static/fonts, and then create CSS blocks to define them.
+
+What that looks like for each font is this. You can copy the fonts to **/static/fonts** and just set the url to /fonts/XXX.ttf if you're hosting your own.
+
+```css
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+```
