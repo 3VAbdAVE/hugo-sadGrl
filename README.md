@@ -20,6 +20,7 @@ I couldn't find any simple Hugo themes that weren't loaded with interactive tool
 ## Features
 
 This recreates the functionaliy of the sadGrl layout builder via hugo.toml settings.
+
 - Topbar on/off
 - Navigation bar on/off
 - Left and right sidebars separately on/off
@@ -28,6 +29,7 @@ This recreates the functionaliy of the sadGrl layout builder via hugo.toml setti
 - Banner image height configurable
 
 This theme offers additional optional functionality unavailable in the layout builder, which hard-codes a lot of this in the output. No need to change CSS or HTML directly.
+
 - Background image and/or color
 - Per-page banner image vs. one global image
 - Title and subtitle floated over the banner image
@@ -46,7 +48,7 @@ If you've never used Hugo, there's tons of [Hugo tutorials](https://gohugo.io/ge
 
 Once you've got a folder that looks like **/your_website_folder/themes/hugo-sadGrl**, you'll want to copy  **/your_website_folder/themes/hugo-sadGrl/theme.toml** to **/your_website_folder/hugo.toml** The name changes from theme.toml to hugo.toml. (This is to help ensure you keep an original copy of theme.toml.)
 
-At this point, you can cd into **/your_website_folder** and run **hugo server**. 
+At this point, you can cd into **/your_website_folder** and run **hugo server**.
 
 If that starts without errors, open a browser to localhost:1313, and you should see the site.
 
@@ -55,9 +57,13 @@ If that starts without errors, open a browser to localhost:1313, and you should 
 All layout features are enabled by default. The layout is easily customized.
 The default templates also include some instruction text to help get accustomed to Hugo and how this theme works.
 
+When you're ready, you'll want to copy the contents of **/public/** to the root of your web host.
+
+Small tip for keeping your site clean:
+
+- Before copying your site up, first *delete* the public folder, and re-run hugo build. Hugo fingerprints .css and some other files. So every change will create a new main.XXX.css in /public/ that you don't need to upload.
+- After copying your site up, *delete* the older /css/main.XXX.css files on your hosting server. They probably don't really hurt anything, but they take space and aren't needed.
+
 ## Configuration
-
-See theme.toml. Most of the general styles can be changed. If you want custom fonts, pop them into your site's static/fonts, and then create CSS blocks to define them.
-
 
 See theme.toml. Most of the general styles can be changed. If you want custom fonts, pop them into your site's static/fonts, and then create CSS blocks to define them.
