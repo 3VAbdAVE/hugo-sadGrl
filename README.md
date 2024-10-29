@@ -66,8 +66,39 @@ Small tip for keeping your site clean:
 
 ## Configuration
 
-See theme.toml. Most of the general styles can be changed. If you want custom fonts, pop them into your site's **/static/fonts**, and then create CSS blocks to define them.
+See theme.toml. Most of the general styles can be changed.
+When you build the site using this theme, the default pages have some sample text with instructions on how to create your own and override those defaults.
 
+## New Features
+
+This theme has a few features that aren't available in the layout builder. The default pages included with the theme have example text for these.
+
+### Per-Page Banner Titles & Images
+
+By default, the image set using **header_image** in the configuration file will be the same on every page, with no text. This can be customized for each new page in the .md file.
+
+Each of these are optional in the front-matter:
+
+```text
+---
+title: "Custom Page Title" <!-- This will float above the banner image. -->
+subtitle: "Custom Page Subtitle"  <!-- This will be below the title (or else be centered if the title is omitted.) -->
+banner_image: "/path/or/url/to/image.png" <!-- This will set the banner for this page. -->
+---
+```
+
+Additionally, you can use the front-matter to specify a separate heading and subheading to appear above the main content. This may be useful to provide context for a list, or an intro title. These are also optional.
+
+```text
+---
+heading: "Content heading" <!-- This will go above the markdown content for this page. -->
+subheading: "Content subheading"  <!-- This will be below the heading. -->
+---
+```
+
+### Custom Fonts
+
+If you want custom fonts, pop them into your site's **/static/fonts**, and then create CSS blocks to define them.
 What that looks like for each font is this. You can set the url to /fonts/XXX.ttf if you're hosting your own.
 
 ```css
