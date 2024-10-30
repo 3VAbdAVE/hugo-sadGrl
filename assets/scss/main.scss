@@ -21,10 +21,29 @@ $section-margin: h.$section_margin;
 	display: flex;
 }
 
-
 @media only screen and (max-width: 800px) {
 	#flex {
     	flex-wrap: wrap;
 	}
+
+    aside {
+        width: 90%;
+    }
+	main {
+        order: 1;
+		width: 90%;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
 }
 

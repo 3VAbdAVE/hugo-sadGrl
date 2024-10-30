@@ -5,6 +5,7 @@ name = "Site Name"
 title = "Site Title"
 copyright = "Copyright String"
 theme = "hugo-sadGrl"
+enableRobotsTXT = true
 
 # Prefix all links with this
 baseURL = "https://example.com"
