@@ -2,6 +2,9 @@
 title = "Default Right"
 draft = false
 noindex = true
+[build]
+    render = "never"
+    list = 'never'
 +++  
   
 Default right Sidebar

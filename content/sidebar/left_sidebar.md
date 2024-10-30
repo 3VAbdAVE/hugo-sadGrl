@@ -1,6 +1,9 @@
 +++
 title = "Default Left"
 draft = false
+[build]
+    render = "never"
+    list = 'never'
 +++  
   
 Default Left Sidebar
