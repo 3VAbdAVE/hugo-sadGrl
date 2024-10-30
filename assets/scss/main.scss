@@ -26,8 +26,12 @@ $section-margin: h.$section_margin;
     	flex-wrap: wrap;
 	}
 
+    #container {
+        max-width: 90%;
+    }
+
     aside {
-        width: 90%;
+        width: 100%;
     }
 	main {
         order: 1;
@@ -36,10 +40,12 @@ $section-margin: h.$section_margin;
 
     #leftSidebar {
         order: 2;
+        margin-right: 0;
     }
 
     #rightSidebar {
         order: 3;
+        margin-left: 0;
     }
 
     #navbar ul {
