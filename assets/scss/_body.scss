@@ -8,6 +8,7 @@ $heading-color: h.$heading_color;
 $content-bg-color: h.$content_bg_color;
 $content-font: h.$content_font;
 $align-home-text: h.$align_home_text;
+$align-header: h.$align_header;
 $content-width: h.$content_width;
 
 body {
@@ -47,7 +48,8 @@ h1 {
 }
 
 #header {
-	justify-content: center;
+	justify-content: $align-header;
+	text-align: $align-header;
 	display: flex;
 	container-type: inline-size;
 	container-name: post-header;
