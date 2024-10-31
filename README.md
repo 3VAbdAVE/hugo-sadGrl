@@ -10,7 +10,7 @@
 >
 > I hope it can also serve as a jumpstart for people learning about Hugo and/or static generator tools.
 
-![sadGrl full layout](screenshots/fullcontent.png)
+![sadGrl full layout](images/screenshot.png)
 
 The default site is built to resemble the layout builder as closeley as possible, including the pink/purple themes and starry background.
 However, this is all configurable.
@@ -46,15 +46,15 @@ This theme is designed to be as easy as Hugo can get.
 
 If you've never used Hugo, there's tons of [Hugo tutorials](https://gohugo.io/getting-started/quick-start/) out there, and most are terrible if you just want to make a website. Follow whichever you'd like to install Hugo, create your site, and get this theme installed.
 
-Once you've got a folder that looks like **/your_website_folder/themes/hugo-sadGrl**, you'll want to copy  **/your_website_folder/themes/hugo-sadGrl/theme.toml** to **/your_website_folder/hugo.toml** The name changes from theme.toml to hugo.toml. (This is to help ensure you keep an original copy of theme.toml.)
+Once you've got a folder that looks like **/your_website_folder/themes/hugo-sadGrl**, you'll want to copy  **/your_website_folder/themes/hugo-sadGrl/config.toml** to **/your_website_folder/config.toml** 
 
 At this point, you can cd into **/your_website_folder** and run **hugo server**.
 
 If that starts without errors, open a browser to localhost:1313, and you should see the site.
 
-![Default Site](screenshots/theme-default-config.png)
+![Default Site](images/theme-default-config.png)
 
-All layout features are enabled by default. The layout is easily customized.
+All layout parts (sidebar, topbar, etc.) are enabled by default. The layout is easily customized.
 The default templates also include some instruction text to help get accustomed to Hugo and how this theme works.
 
 When you're ready, you'll want to copy the contents of **/public/** to the root of your web host.
